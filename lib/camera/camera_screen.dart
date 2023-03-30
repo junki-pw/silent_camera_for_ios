@@ -21,7 +21,9 @@ class CameraScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          func(state.controller!, context);
+        },
         child: const Icon(Icons.camera_alt_outlined),
       ),
       body: ListView(
@@ -57,6 +59,8 @@ class CameraScreen extends ConsumerWidget {
       /// Image を png に変換
       imglib.PngEncoder pngEncoder = imglib.PngEncoder();
       Uint8List png = pngEncoder.encode(image);
+
+      /// 画面遷移
       Navigator.push(
           context, MaterialPageRoute(builder: (_) => Camera2Screen(png: png)));
     });
