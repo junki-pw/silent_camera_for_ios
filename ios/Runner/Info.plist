@@ -47,7 +47,6 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
-    <string>カメラを使う理由・用途を記述（ここをちゃんと書かないと、Appleのレビューでリジェクトされます）</string>
 	<key>NSCameraUsageDescription</key>
 	<string>カメラを使う理由・用途を記述（ここをちゃんと書かないと、Appleのレビューでリジェクトされます）</string>
 	<key>NSMicrophoneUsageDescription</key>

@@ -41,6 +41,7 @@ dependencies:
   freezed: ^2.3.2
   camera: ^0.10.3+2
   image: ^4.0.15
+  image_picker: ^0.8.7+1
 
 dev_dependencies:
   flutter_test:
